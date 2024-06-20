@@ -11,7 +11,7 @@ setup(name="singer-python",
       url="http://singer.io",
       install_requires=[
           'pytz>=2024.1',
-          'jsonschema>=2.6.0,==2.*',
+          'jsonschema>=4.22.0,==4.*',
           'simplejson>=3.19.2,==3.*',
           'python-dateutil>=2.8.2,==2.*',
           'backoff>=2.2.1,==2.*',
@@ -22,7 +22,6 @@ setup(name="singer-python",
               'pylint',
               'ipython',
               'ipdb',
-              'singer-tools'
           ]
       },
       packages=find_packages(),
