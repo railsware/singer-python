@@ -22,7 +22,6 @@ setup(name="singer-python",
               'pylint',
               'ipython',
               'ipdb',
-              'nose',
               'singer-tools'
           ]
       },

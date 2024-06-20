@@ -14,7 +14,7 @@ class TestSingerErrors(unittest.TestCase):
             raise SingerError(error_text)
 
         expected_text = "SingerError\n" + error_text
-        self.assertEquals(expected_text,
+        self.assertEqual(expected_text,
                           str(test_run.exception))
 
     def test_SingerConfigurationError_prints_correctly(self):
@@ -24,7 +24,7 @@ class TestSingerErrors(unittest.TestCase):
             raise SingerConfigurationError(error_text)
 
         expected_text = "SingerConfigurationError\n" + error_text
-        self.assertEquals(expected_text,
+        self.assertEqual(expected_text,
                           str(test_run.exception))
 
     def test_SingerDiscoveryError_prints_correctly(self):
@@ -34,7 +34,7 @@ class TestSingerErrors(unittest.TestCase):
             raise SingerDiscoveryError(error_text)
 
         expected_text = "SingerDiscoveryError\n" + error_text
-        self.assertEquals(expected_text,
+        self.assertEqual(expected_text,
                           str(test_run.exception))
 
     def test_SingerSyncError_prints_correctly(self):
@@ -44,7 +44,7 @@ class TestSingerErrors(unittest.TestCase):
             raise SingerSyncError(error_text)
 
         expected_text = "SingerSyncError\n" + error_text
-        self.assertEquals(expected_text,
+        self.assertEqual(expected_text,
                           str(test_run.exception))
 
     def test_SingerRetryableRequestError_prints_correctly(self):
@@ -54,7 +54,7 @@ class TestSingerErrors(unittest.TestCase):
             raise SingerRetryableRequestError(error_text)
 
         expected_text = "SingerRetryableRequestError\n" + error_text
-        self.assertEquals(expected_text,
+        self.assertEqual(expected_text,
                           str(test_run.exception))
 
     def test_SingerError_prints_multiple_lines_correctly(self):
@@ -64,5 +64,5 @@ class TestSingerErrors(unittest.TestCase):
             raise SingerError(error_text)
 
         expected_text = "SingerError\n" + error_text
-        self.assertEquals(expected_text,
+        self.assertEqual(expected_text,
                           str(test_run.exception))
