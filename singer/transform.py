@@ -3,8 +3,6 @@ import decimal
 import logging
 import re
 
-# TODO: Deprecated jsonschema API. Migrate to new one as described in docs:
-# https://python-jsonschema.readthedocs.io/en/v4.22.0/referencing/#migrating-from-refresolver
 from jsonschema import RefResolver
 
 import singer.metadata
